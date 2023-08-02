@@ -1,0 +1,107 @@
+version control system
+----------------------
+
+working directory > staging area > local repo > remote repo
+
+git config --global user.name (name)       -   to identify the username 
+git config --global user.email (mail-id)   -     to identify the useremail
+
+git init  - we must use this command for init the .git  file in the directory
+
+git add - is used to move the file from working directory to staging area
+
+git rm --cached file name    - is used to remove the file from staging area.
+
+git commit -m "message" - to commit our changes in git
+
+git status  - to know the version control management status of the directory
+
+git log -to know the commit list and the details of it.
+
+Reset -   change or move our header to one commit to another. There are two types of reset option, one is hard reset and another one is soft reset. incase of doing soft reset the data's will be secured only our head is moved from one commit to another, it is recommendable.. if we do the hard reset our head is moved from one commit to another and our data's also deleted through that. So if its required, use hard reset. or else not.
+
+Revert(Delete) -     This method can be delete a particular commit. This Too have two options, one is normal revert it has deleted our changes on commit. but through this a nano editor is opened and the new commit for the deleted commit has risen. but when we revert the commit
+for example,
+
+git revert <commit id> --no-commit
+
+while revert this way...there is no new commit risen for his commit deletion
+
+git repository
+---- ------------------
+
+git clone (git repo url) - to access the remote repo/ to download the remote repo to access
+
+git push origin (branch name) - to import the files from local repo to remote repository
+
+git pull -r = to sync the datas between remote repo with local repo
+
+git remote -v = to know about the remote repo,
+
+while execute this command
+
+example:
+origin https://github.com/SIVAgit001/TASK.git (fetch)
+origin https://github.com/SIVAgit001/TASK.git (push)
+
+we know the fetch/pull and push repos..
+
+In some use case
+we need to change the pull and push origin for a repo,for that case
+git remote set-url origin https://github.com/SIVAgit001/TASK001.git
+
+origin https://github.com/SIVAgit001/TASK001.git (fetch)
+origin https://github.com/SIVAgit001/TASK001.git (push)
+in this case both pull and push origin repo got changed.
+
+In some use case
+we need to change the pull or push origin for a repo,for that case
+
+git remote set-url -- push origin https://github.com/SIVAgit001/TASKUPPER.git 
+ then it changes like
+
+origin https://github.com/SIVAgit001/TASK001.git (fetch)
+origin https://github.com/SIVAgit001/TASKUPPER.git (push)
+by this we can change the particular push or pull repo.
+
+if we having the existing repo
+then we directly excute the above methods,
+git remote add origin  https://github.com/SIVAgit001/TASK001.git
+git branch -m master
+git push-u origin master
+
+GIT branching
+git branch <name> - for created a new branch / git checkout -b <name> - for created branch and automatically switch over to it.
+
+git branch - to check the branch status
+
+git branch -d <name> - to delete the existing branch
+
+git checkout (branch name) - to switch the one branch to another branch
+
+git merge <old branch> <new branch> - to merge the changes in branching
+                      (Source)      (Destination)
+
+Git Rebase
+git rebase <source> <Destination>
+while using this git rebase command ,we merge the sequence of commit(source branch) on top of the commit(destination branch)
+
+Git cherry-pick 
+git cherry-pick <commitid> -  to pick a specific commit from other branch
+
+Git stash
+ when we are working on creating number files,before we commit the changes,when we have another work to clear it. so we just temporarily hide the files ,for that purpose we use stash
+
+command:
+git stash - for hiding the files in temporary location
+git stash pop - to unhide the files from temporary location
+git stash list - to viewing the list of stashed files
+
+Git squash
+its almost a sorting number of commits into onecommit.
+
+git rebase -i <commitid> -from where the commits we want to squash>
+
+
+Reference:
+https://youtu.be/436xDqkfU
