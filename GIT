@@ -3,8 +3,8 @@ version control system
 
 working directory > staging area > local repo > remote repo
 
-git config --global user.name (name)       -   to identify the username 
-git config --global user.email (mail-id)   -     to identify the useremail
+git config --global user.name (name)    -  to identify the username 
+git config --global user.email (mail-id) -  to identify the useremail
 
 git init  - we must use this command for init the .git  file in the directory
 
