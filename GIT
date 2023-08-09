@@ -1,6 +1,5 @@
 version control system
 ----------------------
-
 working directory > staging area > local repo > remote repo
 
 git config --global user.name (name)    -  to identify the username 
