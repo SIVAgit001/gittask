@@ -18,9 +18,9 @@ git status  - to know the version control management status of the directory
 
 git log -to know the commit list and the details of it.
 
-Reset -   change or move our header to one commit to another. There are two types of reset option, one is hard reset and another one is soft reset. incase of doing soft reset the data's will be secured only our head is moved from one commit to another, it is recommendable.. if we do the hard reset our head is moved from one commit to another and our data's also deleted through that. So if its required, use hard reset. or else not.
+Reset - change or move our header to one commit to another. There are two types of reset option, one is hard reset and another one is soft reset. incase of doing soft reset the data's will be secured only our head is moved from one commit to another, it is recommendable.. if we do the hard reset our head is moved from one commit to another and our data's also deleted through that. So if its required, use hard reset. or else not.
 
-Revert(Delete) -     This method can be delete a particular commit. This Too have two options, one is normal revert it has deleted our changes on commit. but through this a nano editor is opened and the new commit for the deleted commit has risen. but when we revert the commit
+Revert(Delete) -  This method can be delete a particular commit. This Too have two options, one is normal revert it has deleted our changes on commit. but through this a nano editor is opened and the new commit for the deleted commit has risen. but when we revert the commit
 for example,
 
 git revert <commit id> --no-commit
