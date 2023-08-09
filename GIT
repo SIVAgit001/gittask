@@ -10,7 +10,7 @@ git init  - we must use this command for init the .git  file in the directory
 
 git add - is used to move the file from working directory to staging area
 
-git rm --cached file name    - is used to remove the file from staging area.
+git rm --cached file name  - is used to remove the file from staging area.
 
 git commit -m "message" - to commit our changes in git
 
@@ -26,7 +26,7 @@ for example,
 git revert <commit id> --no-commit
 
 while revert this way...there is no new commit risen for his commit deletion
-
+                  
 git repository :
 ---- ---------
 
